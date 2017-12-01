@@ -9,7 +9,7 @@
 #'summary(a)
 #' 
 #'
-summary.skim_df <- function(df){
+summary.skim_df <- function(object, ...){
 
   if (is.null(df)) {
     stop("dataframe is null.")
