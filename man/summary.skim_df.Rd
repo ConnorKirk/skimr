@@ -4,7 +4,7 @@
 \alias{summary.skim_df}
 \title{Summary function for skim_df. This is a method of the generic function \code{summary}}
 \usage{
-\method{summary}{skim_df}(df)
+\method{summary}{skim_df}(object, ...)
 }
 \arguments{
 \item{df}{a skim dataframe}

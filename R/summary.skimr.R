@@ -11,17 +11,17 @@
 #'
 summary.skim_df <- function(object, ...){
 
-  if (is.null(df)) {
+  if (is.null(object)) {
     stop("dataframe is null.")
   }
   
-  n_rows <- paste0("Number of Rows: ", attr(df, "data_rows"), "\n")
-  n_cols <- paste0("Number of Columns: ", attr(df, "data_cols"), "\n")
-  df_name <- paste0("Name: ", attr(df, "df_name"), "\n")
+  n_rows <- paste0("Number of Rows: ", attr(object, "data_rows"), "\n")
+  n_cols <- paste0("Number of Columns: ", attr(object, "data_cols"), "\n")
+  df_name <- paste0("Name: ", attr(object, "df_name"), "\n")
   
-  types <- unique(df$type)
+  types <- unique(object$type)
   
-  type_frequency <- table(df$type)
+  type_frequency <- table(object$type)
   type_frequency_string <- paste0(names(type_frequency), ": ", type_frequency, collapse = "\n")
 
   
